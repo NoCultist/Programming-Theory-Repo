@@ -36,6 +36,7 @@ public class WeatherController : MonoBehaviour
         weatherEvents.Find(weather => weather.type == this.weather).weatherEvent?.Invoke();
     }
 
+    [ContextMenu("Update Weather")]
     private void Start()
     {
         SetWeather(weather);
