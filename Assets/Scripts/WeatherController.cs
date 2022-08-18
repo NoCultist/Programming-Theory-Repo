@@ -4,41 +4,44 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class WeatherController : MonoBehaviour
+namespace DistructionDerby.Weather
 {
-    public enum WeatherType
+    public class WeatherController : MonoBehaviour
     {
-        sunny,
-        cloudy,
-        rain
-    }
-
-    [Serializable]
-    class WeatherEvents
-    {
-        public WeatherType type;
-        public UnityEvent weatherEvent;
-
-        public WeatherEvents(WeatherType type, UnityEvent weatherEvent)
+        public enum WeatherType
         {
-            this.type = type;
-            this.weatherEvent = weatherEvent;
+            sunny,
+            cloudy,
+            rain
         }
-    }
 
-    [SerializeField] List<WeatherEvents> weatherEvents = new List<WeatherEvents>();
+        [Serializable]
+        class WeatherEvents
+        {
+            public WeatherType type;
+            public UnityEvent weatherEvent;
 
-    [SerializeField] private WeatherType weather;
+            public WeatherEvents(WeatherType type, UnityEvent weatherEvent)
+            {
+                this.type = type;
+                this.weatherEvent = weatherEvent;
+            }
+        }
 
-    public void SetWeather(WeatherType weatherType)
-    {
-        this.weather = weatherType;
-        weatherEvents.Find(weather => weather.type == this.weather).weatherEvent?.Invoke();
-    }
+        [SerializeField] List<WeatherEvents> weatherEvents = new List<WeatherEvents>();
 
-    [ContextMenu("Update Weather")]
-    private void Start()
-    {
-        SetWeather(weather);
+        [SerializeField] private WeatherType weather;
+
+        public void SetWeather(WeatherType weatherType)
+        {
+            this.weather = weatherType;
+            weatherEvents.Find(weather => weather.type == this.weather).weatherEvent?.Invoke();
+        }
+
+        [ContextMenu("Update Weather")]
+        private void Start()
+        {
+            SetWeather(weather);
+        }
     }
 }
