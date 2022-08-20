@@ -8,10 +8,12 @@ namespace DestructionDerby.Car
         public CarSO car;
         public float alignToGroundTime = 2;
 
-        private LayerMask groundLayer;
+        public LayerMask groundLayer;
         [SerializeField] protected Transform centerOfMass;
-        protected bool isGrounded;
+        public Transform CenterOfMass => centerOfMass;
+        public bool isGrounded;
         private Vector2 input = Vector2.zero;
+        public bool isAi = false;
 
         private void Start()
         {
@@ -22,9 +24,12 @@ namespace DestructionDerby.Car
 
         private void FixedUpdate()
         {
-            if (centerOfMass != null) rb.centerOfMass = centerOfMass.localPosition;
-            isGrounded = Physics.Raycast(centerOfMass.position, -centerOfMass.up, 1f, groundLayer);
-            Move();
+            if (!isAi)
+            {
+                if (centerOfMass != null) rb.centerOfMass = centerOfMass.localPosition;
+                isGrounded = Physics.Raycast(centerOfMass.position, -centerOfMass.up, 1f, groundLayer);
+                Move();
+            }
         }
 
         public void SetInput(float? vertical = null, float? horizontal = null)
