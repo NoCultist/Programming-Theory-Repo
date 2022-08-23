@@ -4,6 +4,19 @@ namespace DestructionDerby.Car
 {
     public class CarController : MonoBehaviour
     {
+
+        private CheckpointManager _checkpointManager;
+        public int lastCheckpoint = -1;
+        public int lap = 0;
+
+
+
+
+        internal void SetCheckpoint(int index)
+        {
+            lastCheckpoint = index;
+        }
+
         public Rigidbody rb;
         public CarSO car;
         public float alignToGroundTime = 2;
@@ -20,6 +33,7 @@ namespace DestructionDerby.Car
             groundLayer = CarManager.Instance.GroundLayer;
             rb = GetComponent<Rigidbody>();
             rb.mass = car.Mass;
+            _checkpointManager = CheckpointManager.Instance;
         }
 
         private void FixedUpdate()
@@ -30,6 +44,28 @@ namespace DestructionDerby.Car
                 isGrounded = Physics.Raycast(centerOfMass.position, -centerOfMass.up, 1f, groundLayer);
                 Move();
             }
+            UpdatePosition();
+        }
+        bool lapflag = true;
+        
+        public void UpdatePosition()
+        {
+            if (lastCheckpoint == _checkpointManager.Count - 1 && lapflag == false)
+            {
+                lap++;
+                lapflag = true;
+            }
+            else if (lastCheckpoint != _checkpointManager.Count - 1 && lapflag == true)
+            {
+                lapflag = false;
+            }
+            if (lastCheckpoint == _checkpointManager.Count - 1)
+            {
+
+                lastCheckpoint = -1;
+
+            }
+            _checkpointManager.UpdatePosition(this, lap, lastCheckpoint + 1, Vector3.Distance(transform.position, _checkpointManager.GetCheckpoint(lastCheckpoint + 1).transform.position));
         }
 
         public void SetInput(float? vertical = null, float? horizontal = null)

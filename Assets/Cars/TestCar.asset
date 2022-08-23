@@ -18,4 +18,4 @@ MonoBehaviour:
   MaxBackwardSpeed: 120
   ForwardAcceleration: 50
   BackwardAcceleration: 50
-  TurnSpeed: 7
+  TurnSpeed: 5

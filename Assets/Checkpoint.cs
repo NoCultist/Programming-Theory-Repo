@@ -8,13 +8,12 @@ namespace DestructionDerby.Car
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.transform.parent.TryGetComponent(out AiCarController AiCar))
+            if (other.TryGetComponent(out CarController Car))
             {
-                if (AiCar.lastCheckpoint == Index - 1)
+                if (Car.lastCheckpoint == Index - 1)
                 {
-                    AiCar.SetCheckpoint(Index);
+                    Car.SetCheckpoint(Index);
                 }
-
             }
         }
     }

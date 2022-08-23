@@ -7,25 +7,31 @@ namespace DestructionDerby.Car
     public class AiCarController : MonoBehaviour
     {
         public CarController carController;
-
+        private CheckpointManager _checkpointManager;
         [SerializeField] private Transform _target;
-        public int lastCheckpoint = -1;
+        
 
         private void Awake()
         {
             carController.isAi = true;
         }
 
-        internal void SetCheckpoint(int index)
+        private void Start()
         {
-            lastCheckpoint = index;
+            _checkpointManager = CheckpointManager.Instance;
         }
+
+
 
         private void SetTarget()
         {
-            _target = CheckpointManager.Instance.GetCheckpoint(lastCheckpoint + 1);
-            if (lastCheckpoint == CheckpointManager.Instance.Count - 1)
-                lastCheckpoint = -1;
+            _target = _checkpointManager.GetCheckpoint(carController.lastCheckpoint + 1);
+            if (carController.lastCheckpoint == _checkpointManager.Count)
+            {
+                
+                carController.lastCheckpoint = -1;
+                
+            }
         }
 
         public void Move()

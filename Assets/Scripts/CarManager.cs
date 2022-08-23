@@ -3,14 +3,17 @@ using UnityEngine;
 
 namespace DestructionDerby.Car
 {
+    
     public class CarManager : MonoBehaviour
     {
+        
         //public GameObject[] carGroups;
         //public int difficulty = 0;
 
         [field: SerializeField] public LayerMask GroundLayer { get; private set; }
 
-        private CarController[] cars;
+        [SerializeField]private CarController[] cars;
+        public CarController[] Cars => cars;
         private int playerCarIndex;
 
 
@@ -43,16 +46,7 @@ namespace DestructionDerby.Car
 
 
 
-            cars = FindObjectsOfType<CarController>();
-            if (cars.Length == 0)
-            {
-                Debug.LogError("No cars detected!");
-            }
-            else
-            {
-                playerCarIndex = GetPlayerCarIndex();
-                Debug.Log("PlayerCarIndex:" + playerCarIndex);
-            }
+            
         }
 
         private int GetPlayerCarIndex() //returns -1 if no player
@@ -81,7 +75,20 @@ namespace DestructionDerby.Car
             if (instance != null)
                 Destroy(gameObject);
             else
+            {
                 instance = this;
+            }
+
+            cars = FindObjectsOfType<CarController>();
+            if (cars.Length == 0)
+            {
+                Debug.LogError("No cars detected!");
+            }
+            else
+            {
+                playerCarIndex = GetPlayerCarIndex();
+                Debug.Log("PlayerCarIndex:" + playerCarIndex);
+            }
         }
         //End of Singleton
     }
