@@ -7,6 +7,8 @@ namespace DestructionDerby.Car
 {
     public class CheckpointManager : MonoBehaviour
     {
+
+        public int RaceLapCount = 3;
         private static CheckpointManager instance;
         private CarManager carManager;
 
@@ -75,6 +77,12 @@ namespace DestructionDerby.Car
             foreach (CarPlace place in places)
             {
                 log += place.car.transform.parent.gameObject.name + " Lap:" + place.positionValue.lap + " | chkpt:"+place.positionValue.nextChkpoint+ "\n";
+            }
+            if(places.Any(x=>x.positionValue.lap == 3))
+            {
+                log = places.Find(x => x.positionValue.lap == 3).car.transform.parent.name + " Won!";
+
+                Time.timeScale = 0;
             }
             ui.text = log;
         }

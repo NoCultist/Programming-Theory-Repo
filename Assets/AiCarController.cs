@@ -26,12 +26,7 @@ namespace DestructionDerby.Car
         private void SetTarget()
         {
             _target = _checkpointManager.GetCheckpoint(carController.lastCheckpoint + 1);
-            if (carController.lastCheckpoint == _checkpointManager.Count)
-            {
-                
-                carController.lastCheckpoint = -1;
-                
-            }
+            
         }
 
         public void Move()
