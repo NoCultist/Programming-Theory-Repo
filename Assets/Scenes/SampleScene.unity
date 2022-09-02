@@ -1552,6 +1552,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7779947350139659596, guid: 3cea551076f1fd744afacd60b61ae936, type: 3}
+      propertyPath: alignToGroundTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779947350139659596, guid: 3cea551076f1fd744afacd60b61ae936, type: 3}
       propertyPath: groundLayer.m_Bits
       value: 8
       objectReference: {fileID: 0}

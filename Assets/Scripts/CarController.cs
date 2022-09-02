@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DestructionDerby.Car
 {
@@ -9,6 +10,7 @@ namespace DestructionDerby.Car
         public int lastCheckpoint = -1;
         public int lap = 0;
 
+        [SerializeField] private UnityEvent<bool> OnToggleDrift;
 
 
 
@@ -38,8 +40,21 @@ namespace DestructionDerby.Car
 
         private void FixedUpdate()
         {
+            var vel = transform.InverseTransformDirection(rb.velocity);
+            if (vel.x > 1 || vel.x < -1)
+            {
+                OnToggleDrift?.Invoke(true);
+            }
+            else
+            {
+                OnToggleDrift?.Invoke(false); 
+            }
+
+
             if (!isAi)
             {
+
+
                 if (centerOfMass != null) rb.centerOfMass = centerOfMass.localPosition;
                 isGrounded = Physics.Raycast(centerOfMass.position, -centerOfMass.up, 1f, groundLayer);
                 Move();
