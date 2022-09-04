@@ -106,7 +106,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127,7 +127,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: 10
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -145,23 +145,23 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0
-        inSlope: -0.80774987
-        outSlope: -0.80774987
+        value: 0.16875
+        inSlope: -0.073165745
+        outSlope: -0.073165745
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.13927579
+        inWeight: 0.25626743
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 0.36078432}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 0.3607843}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0.3607843}
+      key3: {r: 0, g: 0, b: 0, a: 0.3607843}
+      key4: {r: 0, g: 0, b: 0, a: 0.3607843}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
@@ -174,20 +174,20 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
-      atime4: 0
+      atime1: 386
+      atime2: 26407
+      atime3: 26407
+      atime4: 26407
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 3
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0
     generateLightingData: 0
   m_MinVertexDistance: 0.1
@@ -314,7 +314,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -335,7 +335,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: 10
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -353,23 +353,23 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0
-        inSlope: -0.80774987
-        outSlope: -0.80774987
+        value: 0.16875
+        inSlope: -0.073165745
+        outSlope: -0.073165745
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.13927579
+        inWeight: 0.25626743
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 0.36078432}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 0.3607843}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0.3607843}
+      key3: {r: 0, g: 0, b: 0, a: 0.3607843}
+      key4: {r: 0, g: 0, b: 0, a: 0.3607843}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
@@ -382,20 +382,20 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
-      atime4: 0
+      atime1: 386
+      atime2: 26407
+      atime3: 26407
+      atime4: 26407
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 3
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0
     generateLightingData: 0
   m_MinVertexDistance: 0.1
@@ -522,7 +522,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -543,7 +543,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: 10
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -561,23 +561,23 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0
-        inSlope: -0.80774987
-        outSlope: -0.80774987
+        value: 0.16875
+        inSlope: -0.073165745
+        outSlope: -0.073165745
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.13927579
+        inWeight: 0.25626743
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 0.36078432}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 0.3607843}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0.3607843}
+      key3: {r: 0, g: 0, b: 0, a: 0.3607843}
+      key4: {r: 0, g: 0, b: 0, a: 0.3607843}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
@@ -590,20 +590,20 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
-      atime4: 0
+      atime1: 386
+      atime2: 26407
+      atime3: 26407
+      atime4: 26407
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 3
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0
     generateLightingData: 0
   m_MinVertexDistance: 0.1
@@ -761,7 +761,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -782,7 +782,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: 10
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -800,23 +800,23 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0
-        inSlope: -0.80774987
-        outSlope: -0.80774987
+        value: 0.16875
+        inSlope: -0.073165745
+        outSlope: -0.073165745
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.13927579
+        inWeight: 0.25626743
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 0.36078432}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 0.3607843}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0.3607843}
+      key3: {r: 0, g: 0, b: 0, a: 0.3607843}
+      key4: {r: 0, g: 0, b: 0, a: 0.3607843}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
@@ -829,20 +829,20 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
-      atime4: 0
+      atime1: 386
+      atime2: 26407
+      atime3: 26407
+      atime4: 26407
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 3
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0
     generateLightingData: 0
   m_MinVertexDistance: 0.1
@@ -879,8 +879,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 942652607609326513}
     - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: driftSensitivity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
       propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleAccelerate.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
       propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -896,6 +904,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
       propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
@@ -915,6 +927,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5189685209664374412}
     - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 3691907455392467539}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleAccelerate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
       propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -928,6 +948,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
       propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
@@ -947,6 +971,22 @@ PrefabInstance:
       value: SetIsDrift
       objectReference: {fileID: 0}
     - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleAccelerate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1299865835317679220}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleAccelerate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleAccelerate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
       propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: WheelTrail, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -963,6 +1003,14 @@ PrefabInstance:
       value: WheelTrail, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleAccelerate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
       propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -977,6 +1025,50 @@ PrefabInstance:
     - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
       propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleDrift.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324327892099243175, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: OnToggleAccelerate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -1236368536446677946, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1236368536446677946, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: m_Pitch
+      value: 1.81
+      objectReference: {fileID: 0}
+    - target: {fileID: -1236368536446677946, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -1236368536446677946, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1236368536446677946, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: MaxDistance
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: -1236368536446677946, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: MinDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -1236368536446677946, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b32aa8a59db459b4ea3f842185e2a6e7, type: 3}
+    - target: {fileID: -1236368536446677946, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: rolloffMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1236368536446677946, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 650785116232863647, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
       propertyPath: m_Name
@@ -1036,6 +1128,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+--- !u!82 &3691907455392467539 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -1236368536446677946, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
+  m_PrefabInstance: {fileID: 6767717377127253525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5182142482359191090 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1873893515454545959, guid: 470c1b39cf0f35e4c89780ffa6465df8, type: 3}
@@ -1057,8 +1154,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.78033936, y: 2.5813675, z: 5.2654424}
-  m_Center: {x: -0.00000011920929, y: 1.2886481, z: -0.038794756}
+  m_Size: {x: 2.000628, y: 2.290841, z: 5.2654424}
+  m_Center: {x: -0.00000011920929, y: 1.38, z: -0.038794756}
 --- !u!136 &2093137454764437427
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1068,11 +1165,39 @@ CapsuleCollider:
   m_GameObject: {fileID: 6116959791769405834}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 1.3
   m_Height: 5.28
   m_Direction: 2
   m_Center: {x: 0, y: 1.31, z: 0}
+--- !u!136 &3397039213136342954
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6116959791769405834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.4
+  m_Height: 5.03
+  m_Direction: 2
+  m_Center: {x: -1, y: 0.4, z: 0}
+--- !u!136 &5566205412025048145
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6116959791769405834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.4
+  m_Height: 5.03
+  m_Direction: 2
+  m_Center: {x: 1, y: 0.4, z: 0}
 --- !u!64 &7983353086003034957
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1137,3 +1262,99 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6116959791769405834}
   m_Mesh: {fileID: 4300000, guid: 6df34ee591500634282ce8431bcb6976, type: 3}
+--- !u!82 &1299865835317679220
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6116959791769405834}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 06d5319feb75b3b47bc64b8718f64a9b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 5
+  MaxDistance: 300
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.11111111
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

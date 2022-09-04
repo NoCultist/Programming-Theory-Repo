@@ -11,6 +11,7 @@ namespace DestructionDerby.Car
         public int lap = 0;
 
         [SerializeField] private UnityEvent<bool> OnToggleDrift;
+        [SerializeField] private UnityEvent<bool> OnToggleAccelerate;
 
 
 
@@ -38,10 +39,12 @@ namespace DestructionDerby.Car
             _checkpointManager = CheckpointManager.Instance;
         }
 
+
+        public float driftSensitivity = .5f;
         private void FixedUpdate()
         {
             var vel = transform.InverseTransformDirection(rb.velocity);
-            if (vel.x > 1 || vel.x < -1)
+            if (Mathf.Abs(vel.z) > 0.1f && (vel.x > Mathf.Abs(vel.z)*driftSensitivity || vel.x < -Mathf.Abs(vel.z)*driftSensitivity))
             {
                 OnToggleDrift?.Invoke(true);
             }
@@ -85,7 +88,15 @@ namespace DestructionDerby.Car
 
         public void SetInput(float? vertical = null, float? horizontal = null)
         {
-            if (vertical != null) input.y = vertical.Value;
+            if (vertical != null)
+            {
+                OnToggleAccelerate?.Invoke(true);
+                input.y = vertical.Value;
+            }
+            else
+            {
+                OnToggleAccelerate?.Invoke(false);
+            }
             if (horizontal != null) input.x = horizontal.Value * vertical.Value;
         }
 
